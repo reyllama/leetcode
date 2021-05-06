@@ -41,6 +41,6 @@ class CustomStack:
 # param_2 = obj.pop()
 # obj.increment(k,val)
 
-x = [1,2,3,4]
-print(x.pop())
-print(x)
+# x = [1,2,3,4]
+# print(x.pop())
+# print(x)
