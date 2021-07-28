@@ -49,6 +49,6 @@ class Solution(object):
         return res
 
 """
-Runtime: 64 ms, faster than 77.96% of Python online submissions for Find First and Last Position of Element in Sorted Array.
-Memory Usage: 14.8 MB, less than 5.95% of Python online submissions for Find First and Last Position of Element in Sorted Array.
+Runtime: 56 ms, faster than 99.05% of Python online submissions for Find First and Last Position of Element in Sorted Array.
+Memory Usage: 14.9 MB, less than 5.95% of Python online submissions for Find First and Last Position of Element in Sorted Array.
 """
