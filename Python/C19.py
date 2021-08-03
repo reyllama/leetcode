@@ -1,49 +1,35 @@
 """
-17. Letter Combinations of a Phone Number
+19. Remove Nth Node From End of List
 
-Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
-
-A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+Given the head of a linked list, remove the nth node from the end of the list and return its head.
 """
-
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 class Solution(object):
-    def letterCombinations(self, digits):
+    def removeNthFromEnd(self, head, n):
         """
-        :type digits: str
-        :rtype: List[str]
+        :type head: ListNode
+        :type n: int
+        :rtype: ListNode
         """
-
-        # Reference Dictionary
-        ref = {"2":"abc", "3":"def", "4":"ghi", "5":"jkl", "6":"mno", "7":"pqrs", "8":"tuv", "9":"wxyz"}
-        # Output
-        self.res = []
-
-        if len(digits)<1:
-            return self.res
-
-        # Helper function that appends next digit combinations
-        def partsum(query):
-            # If first digit
-            if not self.res:
-                for letter in ref[query]:
-                    self.res.append(letter)
-            # Second or later digits
-            else:
-                # Number of original elements in the res array
-                n = len(self.res)
-                for i in range(n):
-                    # Take out the first n elements (original elements)
-                    tmp = self.res.pop(0)
-                    for letter in ref[query]:
-                        # Append all combinations
-                        self.res.append(tmp+letter)
-
-        for num in digits:
-            partsum(num)
-
-        return self.res
+        N = 1
+        cur = head
+        while cur.next:
+            cur = cur.next
+            N += 1
+        if n == N:
+            head = head.next
+        else:
+            cur = head
+            for _ in range(N-n-1):
+                cur = cur.next  
+            cur.next = cur.next.next
+        return head
 
 """
-Runtime: 16 ms, faster than 76.62% of Python online submissions for Letter Combinations of a Phone Number.
-Memory Usage: 13.4 MB, less than 66.60% of Python online submissions for Letter Combinations of a Phone Number.
+Runtime: 24 ms, faster than 41.52% of Python online submissions for Remove Nth Node From End of List.
+Memory Usage: 13.3 MB, less than 71.31% of Python online submissions for Remove Nth Node From End of List.
 """
