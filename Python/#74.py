@@ -18,6 +18,7 @@ class Solution(object):
         m, n = len(matrix), len(matrix[0])
         res = False
 
+        # First m-1 rows
         for i in range(m-1):
             if matrix[i][0] <= target and matrix[i + 1][0] > target:
                 for j in range(n):
@@ -25,6 +26,7 @@ class Solution(object):
                         res = True
                     elif matrix[i][j] > target:
                         break
+        # Last Row
         for j in range(n):
             if matrix[-1][j] == target:
                 res = True
