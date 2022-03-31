@@ -94,3 +94,8 @@ class Solution(object):
 Runtime: 114 ms, faster than 89.39% of Python online submissions for Maximum Score Words Formed by Letters.
 Memory Usage: 13.6 MB, less than 72.73% of Python online submissions for Maximum Score Words Formed by Letters.
 """
+
+"""
+Comments:
+Instead of manipulating the given objects in-place such as by using del or pop(), keep them as-is and iterate through them with an index and dynamic argument.
+"""
