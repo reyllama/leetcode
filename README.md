@@ -1,4 +1,4 @@
-# leetcode
+# Daily Leetcode Algorithms Problem Solving
 
-<ul> SQL - database </ul>
-<ul> Python - algorithms </ul>
+- Python
+- SQL
