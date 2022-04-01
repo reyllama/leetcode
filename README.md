@@ -1,4 +1,4 @@
-# Daily Leetcode Algorithms Problem Solving Fly-Wheel
+# Daily Leetcode Algorithms Problem Solving
 
 - Python
 - SQL
