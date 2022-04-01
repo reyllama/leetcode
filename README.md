@@ -1,4 +1,1 @@
-# leetcode
-
-<ul> SQL - database </ul>
-<ul> Python - algorithms </ul>
+# Daily Leetcode Algorithms Problem Solving Fly-Wheel
