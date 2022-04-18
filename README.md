@@ -1,4 +1,4 @@
-# Daily Leetcode Algorithms
+# Daily Algorithms
 
-- Python
+- Python (mostly)
 - SQL
